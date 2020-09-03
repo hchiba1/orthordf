@@ -25,7 +25,11 @@ def print_gene_info(gene_id):
     print(f'    orth:protein ncbiprotein:{refseq} .')
     print()
 
-def print_genes(genes):
+def print_group(grp_id, genes):
+    if grp_id == "" or len(genes) == 0:
+        return
+    
+    print(f'group:{grp_id} a orth:OrthologsCluster ;')
     n = len(genes)
     for i in range(n-1):
         print(f'    orth:hasHomologous ncbigene:{genes[i]} ;')
@@ -35,8 +39,8 @@ def print_genes(genes):
         print_gene_info(gene)
 
 fp = open(args.homologene, 'r')
-genes = []
 prev_grp_id = ""
+genes = []
 for line in fp:
     fields = line.strip().split('\t')
     if len(fields) != 6:
@@ -45,12 +49,9 @@ for line in fp:
     grp_id, tax_id, gene_id, symbol, gi, refseq = fields
     gene_info[gene_id] = (symbol, tax_id, refseq);
     genes.append(gene_id)
-    if prev_grp_id == grp_id:
-        continue
-    if prev_grp_id != "" and len(genes) != 0:
-        print_genes(genes)
-    prev_grp_id = grp_id
-    print(f'group:{grp_id} a orth:OrthologsCluster ;')
-    genes = [gene_id]
+    if prev_grp_id != grp_id:
+        print_group(prev_grp_id, genes)
+        prev_grp_id = grp_id
+        genes = [gene_id]
     
-print_genes(genes)
+print_group(prev_grp_id, genes)
