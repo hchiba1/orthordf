@@ -1,5 +1,5 @@
 # OrthoRDF
 
 ```
-./homologyne.py homologne.data > homologene.ttl
+./homologene.py homologne.data > homologene.ttl
 ```
