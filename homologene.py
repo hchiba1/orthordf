@@ -9,9 +9,9 @@ args = parser.parse_args()
 print("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .")
 print("@prefix ncbigene: <http://identifiers.org/ncbigene/> .")
 print("@prefix ncbiprotein: <http://identifiers.org/ncbiprotein/> .")
+print("@prefix homologene: <https://ncbi.nlm.nih.gov/homologene/> .")
 print("@prefix taxid: <http://identifiers.org/taxonomy/> .")
 print("@prefix orth: <http://purl.org/net/orth#> .")
-print("@prefix group: <http://purl.org/orthordf/homologene/group/> .")
 print()
 
 gene_info = {}
@@ -29,7 +29,7 @@ def print_group(grp_id, genes):
     if grp_id == "" or len(genes) == 0:
         return
     
-    print(f'group:{grp_id} a orth:OrthologsCluster ;')
+    print(f'homologene:{grp_id} a orth:OrthologsCluster ;')
     n = len(genes)
     for i in range(n-1):
         print(f'    orth:hasHomologousMember ncbigene:{genes[i]} ;')
