@@ -21,7 +21,7 @@ def print_gene_info(gene_id):
     
     print(f'ncbigene:{gene_id} a orth:Gene ;')
     print(f'    rdfs:label "{symbol}" ;')
-    print(f'    orth:taxon taxid:{tax_id} ;')
+    print(f'    orth:taxon taxid:{taxid} ;')
     print(f'    orth:protein ncbiprotein:{refseq} .')
     print()
 
