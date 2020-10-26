@@ -32,8 +32,8 @@ def print_group(grp_id, genes):
     print(f'group:{grp_id} a orth:OrthologsCluster ;')
     n = len(genes)
     for i in range(n-1):
-        print(f'    orth:hasHomologous ncbigene:{genes[i]} ;')
-    print(f'    orth:hasHomologous ncbigene:{genes[n-1]} .')
+        print(f'    orth:hasHomologousMember ncbigene:{genes[i]} ;')
+    print(f'    orth:hasHomologousMember ncbigene:{genes[n-1]} .')
     print()
     for gene in genes:
         print_gene_info(gene)
