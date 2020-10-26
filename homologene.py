@@ -48,10 +48,10 @@ for line in fp:
         continue
     grp_id, tax_id, gene_id, symbol, gi, refseq = fields
     gene_info[gene_id] = (symbol, tax_id, refseq);
-    genes.append(gene_id)
     if prev_grp_id != grp_id:
         print_group(prev_grp_id, genes)
         prev_grp_id = grp_id
-        genes = [gene_id]
+        genes = []
+    genes.append(gene_id)
     
 print_group(prev_grp_id, genes)
