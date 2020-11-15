@@ -13,6 +13,10 @@ print("@prefix homologene: <https://ncbi.nlm.nih.gov/homologene/> .")
 print("@prefix taxid: <http://identifiers.org/taxonomy/> .")
 print("@prefix orth: <http://purl.org/net/orth#> .")
 print()
+print('<https://ncbi.nlm.nih.gov/homologene/>')
+print('    a orth:OrthologyDataset ;')
+print('    dct:title "HomoloGene" .')
+print()
 
 gene_info = {}
 
@@ -30,6 +34,7 @@ def print_group(grp_id, genes):
         return
     
     print(f'homologene:{grp_id} a orth:OrthologsCluster ;')
+    print(f'    orth:inDataset <https://ncbi.nlm.nih.gov/homologene/> ;')
     n = len(genes)
     for i in range(n-1):
         print(f'    orth:hasHomologousMember ncbigene:{genes[i]} ;')
