@@ -1,0 +1,45 @@
+@prefix taxid: <http://identifiers.org/taxonomy/> .
+@prefix hop: <http://purl.org/net/orthordf/hOP/ontology#> .
+
+taxid:9606 #"Homo sapiens"
+    hop:branchTimeMya 0 .
+taxid:9598 #"Pan troglodytes"
+    hop:branchTimeMya 6.6 .
+taxid:9544 #"Macaca mulatta"
+    hop:branchTimeMya 29.1 .
+taxid:10090 #"Mus musculus"
+    hop:branchTimeMya 90.9 .
+taxid:10116 #"Rattus norvegicus"
+    hop:branchTimeMya 90.9 .
+taxid:9615 #"Canis lupus familiaris"
+    hop:branchTimeMya 97.5 .
+taxid:9913 #"Bos taurus"
+    hop:branchTimeMya 97.5 .
+taxid:9031 #"Gallus gallus"
+    hop:branchTimeMya 320.5 .
+taxid:8364 #"Xenopus tropicalis"
+    hop:branchTimeMya 355.7 .
+taxid:7955 #"Danio rerio"
+    hop:branchTimeMya 429.6 .
+taxid:7227 #"Drosophila melanogaster"
+    hop:branchTimeMya 847 .
+taxid:7165 #"Anopheles gambiae"
+    hop:branchTimeMya 847 .
+taxid:6239 #"Caenorhabditis elegans"
+    hop:branchTimeMya 847 .
+taxid:28985 #"Kluyveromyces lactis"
+    hop:branchTimeMya 1302.5 .
+taxid:318829 #"Pyricularia oryzae"
+    hop:branchTimeMya 1302.5 .
+taxid:33169 #"Eremothecium gossypii"
+    hop:branchTimeMya 1302.5 .
+taxid:4896 #"Schizosaccharomyces pombe"
+    hop:branchTimeMya 1302.5 .
+taxid:4932 #"Saccharomyces cerevisiae"
+    hop:branchTimeMya 1302.5 .
+taxid:5141 #"Neurospora crassa"
+    hop:branchTimeMya 1302.5 .
+taxid:3702 #"Arabidopsis thaliana"
+    hop:branchTimeMya 1513.9 .
+taxid:4530 #"Oryza sativa"
+    hop:branchTimeMya 1513.9 .
