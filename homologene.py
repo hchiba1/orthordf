@@ -7,6 +7,7 @@ parser.add_argument('homologene', help='HomoloGene data file')
 args = parser.parse_args()
 
 print("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .")
+print("@prefix dct: <http://purl.org/dc/terms/> .")
 print("@prefix ncbigene: <http://identifiers.org/ncbigene/> .")
 print("@prefix ncbiprotein: <http://identifiers.org/ncbiprotein/> .")
 print("@prefix homologene: <https://ncbi.nlm.nih.gov/homologene/> .")
