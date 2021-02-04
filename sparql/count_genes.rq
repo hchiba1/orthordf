@@ -1,0 +1,12 @@
+#!/usr/bin/env spang2
+# @option -a
+# @endpoint https://orth.dbcls.jp/sparql-dev
+
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX homologene: <https://ncbi.nlm.nih.gov/homologene/>
+
+SELECT (COUNT(DISTINCT ?gene) AS ?count)
+WHERE {
+  ?grp orth:inDataset homologene: ;
+      orth:hasHomologousMember ?gene .
+}
