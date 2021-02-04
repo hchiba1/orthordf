@@ -1,0 +1,26 @@
+#!/usr/bin/env spang2
+# @option -vac
+# @endpoint https://orth.dbcls.jp/sparql-dev
+
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX homologene: <https://ncbi.nlm.nih.gov/homologene/>
+PREFIX taxid: <http://identifiers.org/taxonomy/>
+PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?human_gene ?num_taxids ?taxids
+WHERE {
+  {
+    SELECT ?human_gene (max(?time) as ?max_time) (GROUP_CONCAT(DISTINCT ?id; separator=",") AS ?taxids) (COUNT(DISTINCT ?id) AS ?num_taxids)
+    WHERE {
+      ?grp orth:inDataset homologene: ;
+          orth:hasHomologousMember ?human_gene, ?gene .
+      ?human_gene orth:taxon taxid:9606 .
+      ?gene orth:taxon ?taxid .
+      ?taxid hop:branchTimeMya ?time .
+      ?taxid dct:identifier ?id .
+    }
+  }
+  FILTER (?max_time <= 50) # 50 million years ago
+}
+ORDER BY DESC(?num_taxids) ?human_gene
