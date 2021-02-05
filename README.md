@@ -1,4 +1,4 @@
-# Orthology RDF
+# HomoloGene RDF
 
 ```
 ./homologene.py homologene.data > homologene.ttl
