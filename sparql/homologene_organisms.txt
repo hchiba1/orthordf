@@ -1,0 +1,12 @@
+branch_time_mya       gene_count          percent
+"0"^^xsd:integer      "172"^^xsd:integer  "0.899158345966857"^^xsd:decimal
+"6.6"^^xsd:decimal    "560"^^xsd:integer  "2.927492289194417"^^xsd:decimal
+"29.1"^^xsd:decimal   "498"^^xsd:integer  "2.603377071462178"^^xsd:decimal
+"90.9"^^xsd:decimal   "285"^^xsd:integer  "1.489884468607873"^^xsd:decimal
+"97.5"^^xsd:decimal   "2907"^^xsd:integer "15.196821579800303"^^xsd:decimal
+"320.5"^^xsd:decimal  "633"^^xsd:integer  "3.309111819750118"^^xsd:decimal
+"355.7"^^xsd:decimal  "1483"^^xsd:integer "7.752626901563072"^^xsd:decimal
+"429.6"^^xsd:decimal  "6637"^^xsd:integer "34.696011291755973"^^xsd:decimal
+"847"^^xsd:integer    "2890"^^xsd:integer "15.107951278164044"^^xsd:decimal
+"1302.5"^^xsd:decimal "580"^^xsd:integer  "3.032045585237075"^^xsd:decimal
+"1513.9"^^xsd:decimal "2484"^^xsd:integer "12.985519368498092"^^xsd:decimal
