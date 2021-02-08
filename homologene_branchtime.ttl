@@ -1,3 +1,4 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix taxid: <http://identifiers.org/taxonomy/> .
 @prefix hop: <http://purl.org/net/orthordf/hOP/ontology#> .
 @prefix branch: <http://purl.org/net/orthordf/HomoloGene/branch/> .
