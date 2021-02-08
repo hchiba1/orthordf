@@ -1,7 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix taxid: <http://identifiers.org/taxonomy/> .
 @prefix hop: <http://purl.org/net/orthordf/hOP/ontology#> .
-@prefix branch: <http://purl.org/net/orthordf/HomoloGene/branch/> .
+@prefix branch: <http://purl.org/net/orthordf/branch/> .
 
 taxid:9606 #"Homo sapiens"
     hop:branch branch:1 ;
@@ -67,14 +67,36 @@ taxid:4530 #"Oryza sativa"
     hop:branch branch:11 ;
     hop:branchTimeMya 1513.9 .
 
-branch:1 rdfs:label "human" .
-branch:2 rdfs:label "chimpanzee" .
-branch:3 rdfs:label "primates" .
-branch:4 rdfs:label "mouse, rat" .
-branch:5 rdfs:label "mammal" .
-branch:6 rdfs:label "chicken" .
-branch:7 rdfs:label "frog" .
-branch:8 rdfs:label "zebrafish" .
-branch:9 rdfs:label "insect, worm" .
-branch:10 rdfs:label "fungi" .
-branch:11 rdfs:label "plant" .
+branch:homologene1 a hop:HomoloGeneBranch ;
+    rdfs:label "human" ;
+    hop:timeMya 0 .
+branch:homologene2 a hop:HomoloGeneBranch ;
+    rdfs:label "chimpanzee" ;
+    hop:timeMya 6.6 .
+branch:homologene3 a hop:HomoloGeneBranch ;
+    rdfs:label "primates" ;
+    hop:timeMya 29.1 .
+branch:homologene4 a hop:HomoloGeneBranch ;
+    rdfs:label "mouse, rat" ;
+    hop:timeMya 90.9 .
+branch:homologene5 a hop:HomoloGeneBranch ;
+    rdfs:label "mammal" ;
+    hop:timeMya 97.5 .
+branch:homologene6 a hop:HomoloGeneBranch ;
+    rdfs:label "chicken" ;
+    hop:timeMya 320.5 .
+branch:homologene7 a hop:HomoloGeneBranch ;
+    rdfs:label "frog" ;
+    hop:timeMya 355.7 .
+branch:homologene8 a hop:HomoloGeneBranch ;
+    rdfs:label "zebrafish" ;
+    hop:timeMya 429.6 .
+branch:homologene9 a hop:HomoloGeneBranch ;
+    rdfs:label "insect, worm" ;
+    hop:timeMya 847 .
+branch:homologene10 a hop:HomoloGeneBranch ;
+    rdfs:label "fungi" ;
+    hop:timeMya 1302.5 .
+branch:homologene11 a hop:HomoloGeneBranch ;
+    rdfs:label "plant" ;
+    hop:timeMya 1513.9 .
