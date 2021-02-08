@@ -1,12 +1,12 @@
-branch_time_mya       gene_count
-"0"^^xsd:integer      "172"^^xsd:integer
-"6.6"^^xsd:decimal    "560"^^xsd:integer
-"29.1"^^xsd:decimal   "498"^^xsd:integer
-"90.9"^^xsd:decimal   "285"^^xsd:integer
-"97.5"^^xsd:decimal   "2907"^^xsd:integer
-"320.5"^^xsd:decimal  "633"^^xsd:integer
-"355.7"^^xsd:decimal  "1483"^^xsd:integer
-"429.6"^^xsd:decimal  "6637"^^xsd:integer
-"847"^^xsd:integer    "2890"^^xsd:integer
-"1302.5"^^xsd:decimal "580"^^xsd:integer
-"1513.9"^^xsd:decimal "2484"^^xsd:integer
+branch_label branch_time_mya       gene_count
+human        "0"^^xsd:integer      "172"^^xsd:integer
+chimpanzee   "6.6"^^xsd:decimal    "560"^^xsd:integer
+primates     "29.1"^^xsd:decimal   "498"^^xsd:integer
+mouse, rat   "90.9"^^xsd:decimal   "285"^^xsd:integer
+mammal       "97.5"^^xsd:decimal   "2907"^^xsd:integer
+chicken      "320.5"^^xsd:decimal  "633"^^xsd:integer
+frog         "355.7"^^xsd:decimal  "1483"^^xsd:integer
+zebrafish    "429.6"^^xsd:decimal  "6637"^^xsd:integer
+insect, worm "847"^^xsd:integer    "2890"^^xsd:integer
+fungi        "1302.5"^^xsd:decimal "580"^^xsd:integer
+plant        "1513.9"^^xsd:decimal "2484"^^xsd:integer
