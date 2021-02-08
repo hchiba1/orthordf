@@ -4,67 +4,67 @@
 @prefix branch: <http://purl.org/net/orthordf/branch/> .
 
 taxid:9606 #"Homo sapiens"
-    hop:branch branch:1 ;
+    hop:branch branch:homologene1 ;
     hop:branchTimeMya 0 .
 taxid:9598 #"Pan troglodytes"
-    hop:branch branch:2 ;
+    hop:branch branch:homologene2 ;
     hop:branchTimeMya 6.6 .
 taxid:9544 #"Macaca mulatta"
-    hop:branch branch:3 ;
+    hop:branch branch:homologene3 ;
     hop:branchTimeMya 29.1 .
 taxid:10090 #"Mus musculus"
-    hop:branch branch:4 ;
+    hop:branch branch:homologene4 ;
     hop:branchTimeMya 90.9 .
 taxid:10116 #"Rattus norvegicus"
-    hop:branch branch:4 ;
+    hop:branch branch:homologene4 ;
     hop:branchTimeMya 90.9 .
 taxid:9615 #"Canis lupus familiaris"
-    hop:branch branch:5 ;
+    hop:branch branch:homologene5 ;
     hop:branchTimeMya 97.5 .
 taxid:9913 #"Bos taurus"
-    hop:branch branch:5 ;
+    hop:branch branch:homologene5 ;
     hop:branchTimeMya 97.5 .
 taxid:9031 #"Gallus gallus"
-    hop:branch branch:6 ;
+    hop:branch branch:homologene6 ;
     hop:branchTimeMya 320.5 .
 taxid:8364 #"Xenopus tropicalis"
-    hop:branch branch:7 ;
+    hop:branch branch:homologene7 ;
     hop:branchTimeMya 355.7 .
 taxid:7955 #"Danio rerio"
-    hop:branch branch:8 ;
+    hop:branch branch:homologene8 ;
     hop:branchTimeMya 429.6 .
 taxid:7227 #"Drosophila melanogaster"
-    hop:branch branch:9 ;
+    hop:branch branch:homologene9 ;
     hop:branchTimeMya 847 .
 taxid:7165 #"Anopheles gambiae"
-    hop:branch branch:9 ;
+    hop:branch branch:homologene9 ;
     hop:branchTimeMya 847 .
 taxid:6239 #"Caenorhabditis elegans"
-    hop:branch branch:9 ;
+    hop:branch branch:homologene9 ;
     hop:branchTimeMya 847 .
 taxid:28985 #"Kluyveromyces lactis"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:318829 #"Pyricularia oryzae"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:33169 #"Eremothecium gossypii"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:4896 #"Schizosaccharomyces pombe"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:4932 #"Saccharomyces cerevisiae"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:5141 #"Neurospora crassa"
-    hop:branch branch:10 ;
+    hop:branch branch:homologene10 ;
     hop:branchTimeMya 1302.5 .
 taxid:3702 #"Arabidopsis thaliana"
-    hop:branch branch:11 ;
+    hop:branch branch:homologene11 ;
     hop:branchTimeMya 1513.9 .
 taxid:4530 #"Oryza sativa"
-    hop:branch branch:11 ;
+    hop:branch branch:homologene11 ;
     hop:branchTimeMya 1513.9 .
 
 branch:homologene1 a hop:HomoloGeneBranch ;
