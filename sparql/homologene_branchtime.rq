@@ -1,0 +1,17 @@
+#!/usr/bin/env spang2
+# @endpoint https://orth.dbcls.jp/sparql-dev
+# @option -a
+
+PREFIX orth: <http://purl.org/net/orth#>
+PREFIX homologene: <https://ncbi.nlm.nih.gov/homologene/>
+PREFIX taxid: <http://identifiers.org/taxonomy/>
+PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
+
+SELECT ?human_gene (max(?time) as ?max_time)
+WHERE {
+  ?grp orth:inDataset homologene: ;
+      orth:hasHomologousMember ?human_gene, ?gene .
+  ?human_gene orth:taxon taxid:9606 .
+  ?gene orth:taxon/hop:branch/hop:timeMya ?time .
+}
+ORDER BY ?max_time
