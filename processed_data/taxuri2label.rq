@@ -1,0 +1,10 @@
+#!/usr/bin/env spang2
+# @endpoint ortho
+# @input (taxid:9606)
+
+SELECT ?taxid ?label
+WHERE {
+  VALUES (?taxid) { {{INPUT}} }
+  ?taxid rdfs:label ?label .
+}
+ORDER BY ?taxid
