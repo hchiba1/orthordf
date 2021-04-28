@@ -5,6 +5,8 @@ NCBI HomoloGene
 
 https://www.ncbi.nlm.nih.gov/homologene
 
+https://www.ncbi.nlm.nih.gov/home/about/policies/
+
 https://www.ncbi.nlm.nih.gov/homologene/statistics/
 
 https://ftp.ncbi.nlm.nih.gov/pub/HomoloGene/build68/
